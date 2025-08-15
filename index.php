@@ -71,7 +71,7 @@
 				).done(function(datos){
 					window.location.replace(datos.data.url + "?token=" + datos.data.token);
 				}).fail(function(xhr, status, error){
-					$(".mensaje").html(hxr.responseJSON.error.message)
+					$(".mensaje").html(xhr.responseJSON.error.message)
 				});
 
 			}
@@ -80,7 +80,7 @@
 					//Si la persona presiona el boton "Iniciar sesion"
 					$("#btn_entrar").click(function(){
 						//Se ejecuta la funcion enviar_datos()
-						enviar_datos($("#txt_usuario"), $("#txt_password"));
+						enviar_datos($("#txt_usuario").val(), $("#txt_password").val());
 					});
 
 					//Si la persona presiona "enter" mientras el focus esta en el campo
@@ -89,7 +89,7 @@
 						//Se evalua si la tecla presionada es "enter"
 						if(event.which == 13){
 							//Se ejecuta la funcion enviar_datos()
-							enviar_datos($("#txt_usuario"), $("#txt_password"));
+							enviar_datos($("#txt_usuario").val(), $("#txt_password").val());
 						}
 					});
 
@@ -99,7 +99,7 @@
 						//Se evalua si la tecla presionada es "enter"
 						if(event.which == 13){
 							//Se ejecuta la funcion enviar_datos()
-							enviar_datos($("#txt_usuario"), $("#txt_password"));
+							enviar_datos($("#txt_usuario").val(), $("#txt_password").val());
 						}
 					});
 				});
