@@ -2,7 +2,7 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8">
-		<title>Johan Jossue Romero Vasconcelos RV100221</title>
+		<title>Johan Jossué Romero Vasconcelos RV100221</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -17,7 +17,7 @@
 					<div class="col"></div>
 					<div class="col">
 						<div class="align-items-center">
-							<p>Johan Jossue Romero Vasconcelos RV100221</p>
+							<p>Johan Jossué Romero Vasconcelos RV100221</p>
 							<form name="frm_login" id="frm_login" method="post" action="core/process.php">
 								<table>
 									<thead>
@@ -80,7 +80,7 @@
 					//Si la persona presiona el boton "Iniciar sesion"
 					$("#btn_entrar").click(function(){
 						//Se ejecuta la funcion enviar_datos()
-						enviar_datos($("#txt_usuario").val(), $("#txt_password").val());
+						enviar_datos($("#txt_usuario").val(), $("#txt_password").val()); //Se guarda el valor del usuario y de la contraseña
 					});
 
 					//Si la persona presiona "enter" mientras el focus esta en el campo
@@ -89,7 +89,7 @@
 						//Se evalua si la tecla presionada es "enter"
 						if(event.which == 13){
 							//Se ejecuta la funcion enviar_datos()
-							enviar_datos($("#txt_usuario").val(), $("#txt_password").val());
+							enviar_datos($("#txt_usuario").val(), $("#txt_password").val()); //Se guarda el valor del usuario y de la contraseña
 						}
 					});
 
@@ -99,7 +99,7 @@
 						//Se evalua si la tecla presionada es "enter"
 						if(event.which == 13){
 							//Se ejecuta la funcion enviar_datos()
-							enviar_datos($("#txt_usuario").val(), $("#txt_password").val());
+							enviar_datos($("#txt_usuario").val(), $("#txt_password").val()); //Se guarda el valor del usuario y de la contraseña
 						}
 					});
 				});
